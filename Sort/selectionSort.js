@@ -4,7 +4,7 @@
 function selectionSort(numsArray) {
     for (let i = 0; i < numsArray.length - 1; i++) { //length - 1, as no need to check last element of array
         let minValueIndex = i;
-        for (let j = i; j < numsArray.length; j++) {
+        for (let j = i; j <= numsArray.length - 1; j++) {
             if (numsArray[j] < numsArray[minValueIndex]) minValueIndex = j;
         }
         if (minValueIndex != i) swap(numsArray, minValueIndex, i);
