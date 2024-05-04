@@ -1,4 +1,6 @@
 // this is simple recursive algo, divide array into subarrays till middle and merge them by sorting
+//Time complexity is O(nlogn)
+
 
 function mergeSortWrapper(numsArray) {
     const low = 0;
@@ -18,30 +20,30 @@ function mergeSort(numsArray, low, high) {
 function sortAndMerge(numsArray, low, mid, high) {
     let firstPointer = low;
     let secondPointer = mid + 1;
-    let sortedArray = [];
+    let tempSortedArray = [];
 
     while (firstPointer <= mid && secondPointer <= high) {
         if (numsArray[firstPointer] <= numsArray[secondPointer]) {
-            sortedArray.push(numsArray[firstPointer]);
+            tempSortedArray.push(numsArray[firstPointer]);
             firstPointer++;
         } else {
-            sortedArray.push(numsArray[secondPointer]);
+            tempSortedArray.push(numsArray[secondPointer]);
             secondPointer++;
         }
     }
 
-    while (secondPointer <= high) {
-        sortedArray.push(numsArray[secondPointer]);
-        secondPointer++;
-    }
-
     while (firstPointer <= mid) {
-        sortedArray.push(numsArray[firstPointer]);
+        tempSortedArray.push(numsArray[firstPointer]);
         firstPointer++;
     }
 
+    while (secondPointer <= high) {
+        tempSortedArray.push(numsArray[secondPointer]);
+        secondPointer++;
+    }
+
     for (let i = low; i <= high; i++) {
-        numsArray[i] = sortedArray.shift();
+        numsArray[i] = tempSortedArray.shift();
     }
 }
 
