@@ -14,7 +14,6 @@ function bubbleSort(numsArray) {
         if (!didSwap) {
             break; // this didSwap is to optimise best case, if no swaps are done, which means array is sorted and no need to do further checks and swaps
         }
-        console.log('ran')
     }
     return numsArray;
 }
