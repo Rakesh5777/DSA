@@ -3,7 +3,7 @@
 
 function insertionSort(numsArray) {
     for (let i = 1; i <= numsArray.length - 1; i++) {
-        let j = i - 1;
+        let j = i - 1; // this is to start on step before i and compare it for example in [1,3,4] if i is at 3 we have to start comparision from 1 so i - 1;
         while (j >= 0 && numsArray[j + 1] < numsArray[j]) {
             swap(numsArray, j + 1, j);
             j--;
