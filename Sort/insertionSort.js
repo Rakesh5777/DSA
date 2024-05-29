@@ -1,6 +1,6 @@
+// Takes an element and place it in its correct position
 // Insert the current index in correct postion to left of it
 // At given index, check if current element is minimum if not SWAP ADJACENT RIGHT till minimum condition fails 
-// Takes an element and place it in its correct position
 
 function insertionSort(numsArray) {
     for (let i = 1; i <= numsArray.length - 1; i++) {
