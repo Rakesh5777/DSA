@@ -18,13 +18,13 @@ function quickSort(numsArray, low, high) {
 
 function findPivotAndPutInCorrectPlace(numsArray, low, high) {
     let pivotIndex = low;
-    if (pivotIndex != low) swap(numsArray, pivotIndex, low); // this is to make any type of pivot to work
+    swap(numsArray, pivotIndex, low); // this is to make any type of pivot to work
     let pivot = numsArray[low];
     let i = low;
     let j = high;
     while (i < j) {
-        while (numsArray[i] <= pivot && i <= high - 1) i++;
-        while (numsArray[j] > pivot && j >= low + 1) j--;
+        while (numsArray[i] <= pivot && i < high) i++;
+        while (numsArray[j] > pivot && j > low) j--;
         if (i < j) swap(numsArray, i, j);
     }
     if (low != j) swap(numsArray, low, j);

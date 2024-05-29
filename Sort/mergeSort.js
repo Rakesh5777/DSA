@@ -9,7 +9,7 @@ function mergeSortWrapper(numsArray) {
 }
 
 function mergeSort(numsArray, low, high) {
-    if (low >= high) return numsArray;
+    if (low === high) return numsArray; // this can ideally be low === high, but just to be extra cautions kept low >= high
     const mid = Math.floor((low + high) / 2);
     mergeSort(numsArray, low, mid);
     mergeSort(numsArray, mid + 1, high);
@@ -22,6 +22,7 @@ function sortAndMerge(numsArray, low, mid, high) {
     let secondPointer = mid + 1;
     let tempSortedArray = [];
 
+    //compare elements and pust till atleast one part of array is inserted
     while (firstPointer <= mid && secondPointer <= high) {
         if (numsArray[firstPointer] <= numsArray[secondPointer]) {
             tempSortedArray.push(numsArray[firstPointer]);
@@ -32,18 +33,21 @@ function sortAndMerge(numsArray, low, mid, high) {
         }
     }
 
+    // to copy left over elements in first part of array;
     while (firstPointer <= mid) {
         tempSortedArray.push(numsArray[firstPointer]);
         firstPointer++;
     }
 
+    // to copy left over elements in second part of array;
     while (secondPointer <= high) {
         tempSortedArray.push(numsArray[secondPointer]);
         secondPointer++;
     }
 
-    for (let i = low; i <= high; i++) {
-        numsArray[i] = tempSortedArray.shift();
+    // this is to copy all numbers to result
+    for (let i = 0; i < tempSortedArray.length; i++) {
+        numsArray[low + i] = tempSortedArray[i];
     }
 }
 
