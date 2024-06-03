@@ -1,4 +1,4 @@
-// You are given an array of ‘N’ integers. You need to find the length of the longest sequence which contains the consecutive elements.
+// Problem Statement: You are given an array of ‘N’ integers. You need to find the length of the longest sequence which contains the consecutive elements.
 // put all elements in set to remove duplicates
 // then check each element does it have any previous in the array, if it doesnt have then check for longest consecutive and save the length
 // if previous number is there then just ignore to find longest consecutive because we would have already checked it 
