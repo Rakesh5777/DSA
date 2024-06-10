@@ -64,6 +64,7 @@ function lenOfLongSubarrTwoPointer(arr, n, k) {
 
 
 // console.log(lenOfLongSubarr([10, 4, 3, 3, 5, 5], 6, 16));
-console.log(lenOfLongSubarrTwoPointer([1, 1, 1, 1, 1, 2, 3, 4, 1, 1, 1, 1, 1, 1], 14, 6));
+// console.log(lenOfLongSubarrTwoPointer([1, 1, 1, 1, 1, 2, 3, 4, 1, 1, 1, 1, 1, 1], 14, 6));
+console.log(lenOfLongSubarr([15, -2, 2, -8, 1, 7, 10, 23], 8, 0));
 // console.log('result', lenOfLongSubarr([-13, 0, 6, 15, 16, 2, 15, -12, 17, -16, 0, -3, 19, -3, 2, -9, -6], 17, 15));
 // console.log(lenOfLongSubarr([7, 4, -17, -13, -15, 1, 16, 7, 16, -15, -7, -7, -18, 19, 11, -13, 10 - 16], 18, 30));
