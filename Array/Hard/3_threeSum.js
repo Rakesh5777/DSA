@@ -37,8 +37,8 @@ var threeSum = function (nums) {
                 j++; // move j right, to find next triplet 
                 k--; // move k left, to find next triplet
 
-                while (j < k && nums[j - 1] === nums[j]) j++; // this is to find next not equal element which we haven't processed 
-                while (j < k && nums[k + 1] === nums[k]) k--; // this is to find next not equal element which we haven't processed
+                while (j < k && nums[j - 1] === nums[j]) j++; // this is to find next non duplicate which we haven't processed 
+                while (j < k && nums[k + 1] === nums[k]) k--; // this is to find next non duplicate which we haven't processed
             }
         }
 
