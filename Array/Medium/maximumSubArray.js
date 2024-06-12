@@ -22,4 +22,4 @@ function maximumSubArray(nums) {
     return max;
 }
 
-console.log(maximumSubArray([-2, 1, -3, 4, -1, 2, 1, -5, 4]))
+console.log(maximumSubArray([-2, 1, -3, 4, -1, 2, 1, -5, 4])) // 6
