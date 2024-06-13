@@ -9,7 +9,7 @@ function mergeSortWrapper(numsArray) {
 }
 
 function mergeSort(numsArray, low, high) {
-    if (low === high) return numsArray; // this can ideally be low === high, but just to be extra cautions kept low >= high
+    if (low === high) return // this can ideally be low === high, but just to be extra cautions kept low >= high
     const mid = Math.floor((low + high) / 2);
     mergeSort(numsArray, low, mid);
     mergeSort(numsArray, mid + 1, high);
