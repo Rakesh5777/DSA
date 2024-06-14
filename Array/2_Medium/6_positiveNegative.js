@@ -20,4 +20,4 @@ var rearrangeArray = function (nums) {
     return result;
 };
 
-console.log(rearrangeArray([1, 2, -1, 3, 1, -4, 5, 6, -3, -1, -2, 5]));
+console.log(rearrangeArray([1, 2, -1, 3, 1, -4, 5, 6, -3, -1, -2, 5])); // [ 1, -1,  2, -4,  3, -3,  1, -1,  5, -2, 6 ]

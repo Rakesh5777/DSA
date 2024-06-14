@@ -54,6 +54,8 @@ const swapMatrix = (matrix, firstIndex, secondIndex) => {
     matrix[secondIndex][firstIndex] = temp;
 }
 
+
+// solution --------------- 2 --------------------
 // intution for brute is simple have a result matrix and store correct answer
 // Input: matrix = [[1,2,3],[4,5,6],[7,8,9]] loop from reverse of input and push in all three arrays with j index 
 // [7, 8 , 9] this will go to [[7],[8],[9]]

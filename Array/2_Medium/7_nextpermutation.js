@@ -41,4 +41,4 @@ function swap(nums, first, second) {
 }
 
 
-console.log([1, 2, 5, 6, 4, 7]);
+console.log(nextPermutation([1, 2, 4, 3]));
