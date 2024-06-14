@@ -5,4 +5,4 @@ function isSorted(numsArray) {
     return true;
 }
 
-console.log(isSorted([1, 2, 3, 4, 7, 8, 9, 9]))
+console.log(isSorted([1, 2, 3, 4, 7, 8, 9, 9])) // true
