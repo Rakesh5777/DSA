@@ -23,9 +23,12 @@ function sortAndMerge(nums, low, mid, high) {
     let count = 0;
 
     // Count reverse pairs
+    // [3, 5]   [1]
+    // we check for 3 > 2 * 1 as condition passes
+    // we track count
     while (left <= mid) { // as we have traverse full left side array
         while (right <= high && nums[left] > 2 * nums[right]) right++; // to find the index where condition doesn't match
-        count += (right - (mid + 1));
+        count += (right - (mid + 1)); // this is to find length
         left++;
     }
 
@@ -60,3 +63,5 @@ function sortAndMerge(nums, low, mid, high) {
 
     return count;
 }
+
+console.log(reversePairs([2, 4, 3, 5, 1])) // 3
