@@ -8,7 +8,7 @@ const search = function (nums, target) {
 
 function binarySearch(nums, low, high, target) {
 
-    while (high > low) {
+    while (low <= high) {
 
         let mid = Math.floor(low + (high - low) / 2); // this calculation is for safer side, as for largers integers, when high is maximum integer, high + low will be give us error
 
@@ -25,7 +25,7 @@ function binarySearch(nums, low, high, target) {
 }
 
 function binarySearchRecursive(nums, low, high, target) {
-    if (high < low) return -1;
+    if (low <= high) return -1;
     let mid = Math.floor(low + (high - low) / 2); // this calculation is for safer side, as for largers integers, when high is maximum integer, high + low will be give us error
 
     if (nums[mid] === target) return mid;
