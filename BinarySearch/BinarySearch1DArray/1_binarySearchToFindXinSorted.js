@@ -13,10 +13,10 @@ function binarySearch(nums, low, high, target) {
         let mid = Math.floor(low + (high - low) / 2); // this calculation is for safer side, as for largers integers, when high is maximum integer, high + low will be give us error
 
         if (nums[mid] === target) {
-            return mid
-        } else if (nums[mid] > target) {
+            return mid // the movement we find the element just return the index
+        } else if (nums[mid] > target) { // if nums[mid] is greater than given target, as nums is sorted we dont need to check array from mid to high 
             high = mid - 1;
-        } else if (nums[mid] < target) {
+        } else if (nums[mid] < target) { // if nums[mid] is less than given target, as nums is sorted we dont need to check array from low to mid 
             low = mid + 1;
         }
     }
