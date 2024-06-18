@@ -26,7 +26,7 @@ var searchInsertWithLowerBound = function (nums, x) {
     return ans;
 };
 
-// ---------------- we can find floor and insert element just after floor
+// ----------------- we can find floor and insert element just after floor
 
 var searchInsertWithFloor = function (nums, x) {
     let low = 0;
