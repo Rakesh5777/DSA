@@ -30,3 +30,5 @@ var search = function (nums, target) {
 
     return -1; // if no element found, return -1
 };
+
+console.log(search([7, 8, 9, 1, 2, 3, 4, 5, 6], 4)) // 6

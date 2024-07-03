@@ -6,12 +6,11 @@ function findFloor(nums, x) {
     let low = 0;
     let high = nums.length - 1;
 
-    let mid = -1;
     let ans = -1; // this is to store answer
 
     while (low <= high) {
 
-        mid = Math.floor(low + (high - low) / 2);
+        let mid = Math.floor(low + (high - low) / 2);
 
         // as per given condition, x should be greater then largest possible element
         if (nums[mid] <= x) { // so if nums[mid] is less than x, this might be my answer, as we already got smaller number than x, going left (<-) will give even more smaller, so we go right (->)
