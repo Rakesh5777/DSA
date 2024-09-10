@@ -40,6 +40,29 @@ function findKRotation(arr, n) {
     return minIndex;
 }
 
+// more easy way
+function findMinInRotatedSortedArray(arr) {
+    let low = 0, high = arr.length - 1;
+
+    // low can ever be greater than high, as low only moves 1 step and also high will only move till mid, so at any given point low can never be greater than high
+    while (low < high) {
+        let mid = Math.floor((low + high) / 2);
+
+        // If mid element is greater than the high element,
+        // the minimum is in the right half
+        if (arr[mid] > arr[high]) {
+            low = mid + 1;
+        } else {
+            // Otherwise, the minimum is in the left half or is the mid element
+            high = mid;
+        }
+    }
+
+    // When low == high, we found the minimum element
+    return arr[low];
+}
+
+
 console.log(findKRotation([2, 3, 4, 5, 6, 7, 8, 9, 1], 9)) // 8
 console.log(findKRotation([5, 1, 2, 3, 4], 5)) // 1
 console.log(findKRotation([1, 2, 3, 4, 5], 5)) // 0;
