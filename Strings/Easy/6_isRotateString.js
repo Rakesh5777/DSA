@@ -2,8 +2,7 @@ function isRotateString(s, goal) {
     if (s.length !== goal.length) return false;
 
     // goal = cdeab => cdeab + cdeab = cde(abcde)ab ----> this solves the problem
-    let temp = goal + goal;
-    return temp.includes(s);
+    return (goal + goal).includes(s);
 }
 
 
