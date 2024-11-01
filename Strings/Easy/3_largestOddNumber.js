@@ -7,6 +7,7 @@ var largestOddNumber = function (num) {
     return ""
 };
 
+// this wont work as 
 var largestOddNumber1 = function (num) {
     while (num) {
         if (+num[num.length - 1] % 2 != 0) {
@@ -17,3 +18,5 @@ var largestOddNumber1 = function (num) {
     }
     return '';
 };
+
+console.log(largestOddNumber("761253762158"))
