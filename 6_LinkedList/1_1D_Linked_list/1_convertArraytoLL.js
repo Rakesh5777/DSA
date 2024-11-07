@@ -1,5 +1,5 @@
 
-class Node {
+export class Node {
     constructor(data) {
         this.data = data;
         this.next = null;
@@ -9,7 +9,7 @@ class Node {
 
 function convertArrayToLL(arr) {
     let head = new Node(arr[0]);
-    let tail = new Node();
+    let tail = null;
     let temp = head;
 
     for (let i = 1; i < arr.length; i++) {
