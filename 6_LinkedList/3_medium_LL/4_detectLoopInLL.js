@@ -1,3 +1,4 @@
+//Algorithm: Floyd's Tortoise and Hare Algorithm
 function hasCycle(head) {
     // Initialize two pointers, slow and fast
     let slow = head;

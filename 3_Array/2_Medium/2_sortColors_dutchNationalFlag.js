@@ -1,4 +1,4 @@
-// dutch national flag algorithm
+// Algorithm: dutch national flag algorithm
 // 1 to LOW - 1 ================ ZERO's (sorted)
 // LOW to MID - 1 ============== ONE's  (sorted)
 // MID to HIGH is given array           (unsorted)

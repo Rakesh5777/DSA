@@ -1,4 +1,4 @@
-// TortoiseHare Method algorithm
+//Algorithm: TortoiseHare Method algorithm
 var middleNode = function (head) {
     let slowPointer = head;
     let fastPointer = head;

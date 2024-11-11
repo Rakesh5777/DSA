@@ -1,5 +1,5 @@
 //Problem Statement: Given an integer array arr, find the contiguous subarray (containing at least one number) which has the largest sum and returns its sum and prints the subarray.
-// this can be solved with Kadane's Algorithm
+// this can be solved with Algorithm: Kadane's Algorithm
 // with simple intution of carry sum in the array till it is positive, the movement it is less than zero reset sum
 // but at every iteration just store the max sum
 

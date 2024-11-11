@@ -1,4 +1,4 @@
-// this is Moore's Voting Algorithm 
+// this is Algorithm: Moore's Voting Algorithm 
 // intution here if majority number exists then it wont cancel off while we are checking for count 
 
 const majorityElement = (nums) => {
